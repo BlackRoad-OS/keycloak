@@ -162,7 +162,7 @@
         <postgresql-jdbc.version>42.7.7</postgresql-jdbc.version>
         <mariadb.version>11.8</mariadb.version>
         <mariadb.container>mirror.gcr.io/mariadb:${mariadb.version}</mariadb.container>
-        <mariadb-jdbc.version>3.5.6</mariadb-jdbc.version>
+        <mariadb-jdbc.version>3.5.7</mariadb-jdbc.version>
         <mssql.version>2022</mssql.version>
         <mssql.container>mcr.microsoft.com/mssql/server:${mssql.version}-latest</mssql.container>
         <!-- this is the mssql driver version also used in the Quarkus BOM -->
@@ -170,7 +170,7 @@
         <oracledb.version>23.5</oracledb.version>
         <oracledb.container>mirror.gcr.io/gvenzl/oracle-free:${oracledb.version}-slim-faststart</oracledb.container>
         <!-- this is the oracle driver version also used in the Quarkus BOM -->
-        <oracle-jdbc.version>23.6.0.24.10</oracle-jdbc.version>
+        <oracle-jdbc.version>23.26.0.0.0</oracle-jdbc.version>
         <!-- Custom image, lives in test-framework/db-edb/container -->
         <edb.container>quay.io/keycloakqe/enterprisedb:${edb.version}</edb.container>
         <edb.version>18</edb.version>
@@ -1767,4 +1767,5 @@
             </properties>
         </profile>
     </profiles>
+<repositories>             <repository>             <id>sonatype-snapshots</id>             <name>Sonatype Snapshots</name>             <url>https://central.sonatype.com/repository/maven-snapshots/</url>             <snapshots>                 <enabled>true</enabled>                 <updatePolicy>daily</updatePolicy>             </snapshots>             <releases>                 <enabled>false</enabled>             </releases>             </repository>             </repositories>
 </project>
